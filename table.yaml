@@ -1,0 +1,9 @@
+Row Key: user123
+
+Column Family: personal
+  - name: "Jiregna"
+  - age: 32
+
+Column Family: contact
+  - email: jiregna@example.com
+  - phone: 0987654321
