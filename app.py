@@ -18,7 +18,6 @@ def run_app():
         page_icon="🔗",
         layout="wide"
     )
-
     # --- Header with Custom Styling ---
     logo_base64 = get_base64_image("assets/image_0879e9.png")
     flag_base64 = get_base64_image("assets/image_087aab.png")
@@ -28,7 +27,7 @@ def run_app():
     <div style="display: flex; align-items: center; justify-content: space-between;">
         <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
         <div style="text-align: center; flex-grow: 1;">
-            <h1 style="color: white; font-family: 'Segoe UI', sans-serif; margin-bottom: 0;">Health Facility Data Matcher</h1>
+            <h1 style="color: white; font-family: 'Segoe UI', sans-serif; margin-bottom: 0;">Woreda Data Matcher</h1>
             <h3 style="color: #EEEEEE; margin-top: 0; font-weight: normal;">Merge and Standardize Two Datasets</h3>
         </div>
         <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
