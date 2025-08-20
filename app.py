@@ -20,22 +20,22 @@ def run_app():
     )
 
     # --- Header with Custom Styling ---
-    logo_base64 = get_base64_image("image_0879e9.png")
-    flag_base64 = get_base64_image("image_087aab.png")
+    logo_base64 = get_base64_image("assets/image_0879e9.png")
+    flag_base64 = get_base64_image("assets/image_087aab.png")
 
     st.markdown(f"""
-    <div style="background: linear-gradient(to right, #004d40, #000000); padding: 10px; border-radius: 10px; margin-bottom: 20px; position: relative; color: white;">
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-            <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
-            <div style="text-align: center; flex-grow: 1;">
-                <h1 style="color: white; font-family: 'Segoe UI', sans-serif; margin-bottom: 0;">Health Facility Data Matcher</h1>
-                <h3 style="color: #EEEEEE; margin-top: 0; font-weight: normal;">Merge and Standardize Two Datasets</h3>
-            </div>
-            <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
+<div style="background: linear-gradient(to right, #004d40, #000000); padding: 10px; border-radius: 10px; margin-bottom: 20px; position: relative; color: white;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 style="color: white; font-family: 'Segoe UI', sans-serif; margin-bottom: 0;">Health Facility Data Matcher</h1>
+            <h3 style="color: #EEEEEE; margin-top: 0; font-weight: normal;">Merge and Standardize Two Datasets</h3>
         </div>
-        <img src="data:image/png;base64,{flag_base64}" style="position: absolute; top: 10px; right: 10px; height: 50px;">
+        <img src="data:image/png;base64,{logo_base64}" style="height: 60px; margin: 0 10px;">
     </div>
-    """, unsafe_allow_html=True)
+    <img src="data:image/png;base64,{flag_base64}" style="position: absolute; top: 10px; right: 10px; height: 50px;">
+</div>
+""", unsafe_allow_html=True)
 
     st.info("""
     This tool matches records from two datasets based on fuzzy matching of **Region**, **Zone**, and **Woreda** names. It then combines the remaining data from both files into a single output.
