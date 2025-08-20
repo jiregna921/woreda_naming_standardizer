@@ -1,6 +1,17 @@
 # standardizer.py
 import pandas as pd
 from rapidfuzz import process, fuzz
+# ... (other imports)
+import streamlit as st
+
+@st.cache_data
+def match_and_merge_two_datasets(df1, df2, col_mapping1, col_mapping2, region_threshold, zone_threshold, woreda_threshold):
+    """
+    Matches two datasets based on fuzzy-matching of key columns.
+    ...
+    """
+    # ... (your existing code)
+    # The rest of your function remains the same
 
 def match_and_merge_two_datasets(df1, df2, col_mapping1, col_mapping2, region_threshold, zone_threshold, woreda_threshold):
     """
